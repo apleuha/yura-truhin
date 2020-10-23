@@ -35,6 +35,10 @@ module.exports = env => ({
           'sass-loader',
         ],
       },
+      { test: /\.handlebars$/,
+        exclude: /node_modules/,
+        use: "handlebars-loader"
+      }
     ],
   },
   plugins: [
